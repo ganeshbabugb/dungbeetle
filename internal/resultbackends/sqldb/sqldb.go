@@ -36,7 +36,7 @@ type SqlDB struct {
 
 	// The result schemas (CREATE TABLE ...) are dynamically
 	// generated everytime queries are executed based on their result columns.
-	// They're cached here so as to avoid repetetive generation.
+	// They're cached here so as to avoid repetitive generation.
 	resTableSchemas map[string]insertSchema
 	schemaMutex     sync.RWMutex
 }

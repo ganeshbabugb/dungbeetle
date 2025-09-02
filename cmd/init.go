@@ -45,10 +45,8 @@ Flags:
 `
 
 	f.Usage = func() {
-		fmt.Fprint(os.Stderr, usage)
-		f.SetOutput(os.Stderr)
-		f.PrintDefaults()
-		fmt.Fprintln(os.Stderr)
+		fmt.Print(usage)
+		fmt.Println(f.FlagUsages())
 		os.Exit(0)
 	}
 

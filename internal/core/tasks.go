@@ -71,7 +71,7 @@ func (co *Core) loadTasks(dir string) (Tasks, error) {
 
 				// A map of DBs are attached to every query. This can be
 				// DBs tagged specifically to queries in the SQL file,
-				// or will be the map of all avaliable DBs. During execution
+				// or will be the map of all available DBs. During execution
 				// one of these DBs will be picked randomly.
 				srcDBs dbpool.Pool
 
